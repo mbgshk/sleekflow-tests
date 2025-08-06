@@ -1,19 +1,23 @@
-# SleekFlow QA Automation Test
+# 🚀 SleekFlow QA Automation Test
 
-This repository contains Playwright test cases for Signup and Login functionality on [SleekFlow](https://sleekflow.io).
+This repository contains automated test scripts using [Playwright](https://playwright.dev/) for validating **Signup** and **Login** functionalities on [SleekFlow](https://sleekflow.io).
 
-## 🧩 Project Structure
+## 📁 Project Structure
+
+```
 
 sleekflow-tests/
 ├── tests/
-│   ├── signup.spec.ts
-│   └── login.spec.ts
+│   ├── signup.spec.ts        # Test cases for signup flow
+│   └── login.spec.ts         # Test cases for login flow
 ├── utils/
-│   └── authHelpers.ts
-├── playwright.config.ts
+│   └── authHelpers.ts        # Shared login functions & utilities
+├── playwright.config.ts      # Playwright configuration
 └── README.md
 
-## 🚀 Getting Started
+````
+
+## ⚙️ Setup Instructions
 
 ### 1. Install Dependencies
 
@@ -22,23 +26,23 @@ Make sure you have [Node.js](https://nodejs.org) installed.
 ```bash
 npm install
 npx playwright install
-```
+````
 
 ### 2. Run Tests
 
-To run all tests in headless mode:
+Run all tests in headless mode:
 
 ```bash
 npx playwright test
 ```
 
-To run with browser UI:
+Run tests with browser UI (headed mode):
 
 ```bash
 npx playwright test --headed
 ```
 
-To run specific file:
+Run specific test file (e.g., signup):
 
 ```bash
 npx playwright test tests/signup.spec.ts
@@ -46,4 +50,24 @@ npx playwright test tests/signup.spec.ts
 
 ---
 
-Test cases are written to simulate realistic Signup & Login flows, including dynamic email handling and reusable login function.
+## ✅ Test Coverage
+
+* **Signup Flow**
+
+  * Visit signup page from dashboard
+  * Fill in valid signup form
+  * Submit and validate successful registration
+
+* **Login Flow**
+
+  * Reusable login helper via `authHelpers.ts`
+  * Valid credential login
+  * Assert redirected content after login
+
+These test cases simulate realistic user flows and leverage Playwright’s powerful features for handling UI automation and assertions.
+
+---
+
+Feel free to clone and try it out! 🚀
+
+```
