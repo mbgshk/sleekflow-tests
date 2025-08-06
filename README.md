@@ -69,5 +69,3 @@ These test cases simulate realistic user flows and leverage Playwright’s power
 ---
 
 Feel free to clone and try it out! 🚀
-
-```
