@@ -4,7 +4,6 @@ This repository contains Playwright test cases for Signup and Login functionalit
 
 ## 🧩 Project Structure
 
-```
 sleekflow-tests/
 ├── tests/
 │   ├── signup.spec.ts
@@ -13,7 +12,6 @@ sleekflow-tests/
 │   └── authHelpers.ts
 ├── playwright.config.ts
 └── README.md
-```
 
 ## 🚀 Getting Started
 

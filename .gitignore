@@ -1,0 +1,11 @@
+# Ignore Playwright test results
+test-results/
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# IDE config
+.vscode/
